@@ -1,0 +1,21 @@
+<h2>商品一覧</h2>
+<div *ngFor="let product of products">
+  <a [title]="product.name + ' の詳細はこちら'">
+      <h3>{{product.name}}</h3>
+  </a>
+  <p>¥{{product.price}}</p>
+
+  <p *ngIf="product.description">
+    詳細:{{product.description}}
+  </p>
+
+</div>
+
+<!-- 配列studentsの値をlet studentにループして取り出す -->
+<!-- <h2>{{student[1]}}</h2>
+<h2>{{student[2]}}</h2> -->
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->
