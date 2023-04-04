@@ -9,7 +9,6 @@ import { products } from '../products';
 })
 export class ProductListComponent {
   products = products;
-
   // students=[
   //   {
   //     name:"1郎",
@@ -30,7 +29,6 @@ export class ProductListComponent {
   // students=["太郎","２郎","３郎"]; 
   // student2="次郎";
   // student3="三浪";
-
   share() {
     window.alert('The product has been shared!');
   }
