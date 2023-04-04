@@ -11,7 +11,12 @@ import { Product } from '../shared/product.model';
 export class ProductListComponent {
 
   // products = products;
-  products:Product = products;
+  //products:Product = products;
+  products:Product = {
+    name:"",
+    price:0,
+    description:"",
+  }
 
   // number:number=5;
   // stname:string="";
