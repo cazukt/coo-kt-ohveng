@@ -6,17 +6,18 @@ import { Product } from '../shared/product.model';
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
-  styleUrls: ['./product-list.component.css']
+  styleUrls: ['./product-list.component.css'],
 })
 export class ProductListComponent {
+  products: Product[] = products;
 
   // products = products;
   //products:Product = products;
-  products:Product = {
-    name:"",
-    price:0,
-    description:"",
-  }
+  // products: Product[] = [{
+  //   name: "",
+  //   price: 0,
+  //   description: 'b',
+  // }];
 
   // number:number=5;
   // stname:string="";
@@ -40,14 +41,13 @@ export class ProductListComponent {
   //     age:40
   //   },
   // ]
-  // students=["太郎","２郎","３郎"]; 
+  // students=["太郎","２郎","３郎"];
   // student2="次郎";
   // student3="三浪";
   share() {
     window.alert('The product has been shared!');
   }
 }
-
 
 /*
 Copyright Google LLC. All Rights Reserved.
