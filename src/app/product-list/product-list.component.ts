@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { products } from '../products';
+import { Product } from '../shared/product.model';
 
 @Component({
   selector: 'app-product-list',
@@ -8,7 +9,15 @@ import { products } from '../products';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent {
-  products = products;
+
+  // products = products;
+  products:Product = products;
+
+  // number:number=5;
+  // stname:string="";
+  // all1:any=0;
+  // all2:any="";
+
   // students=[
   //   {
   //     name:"1郎",
